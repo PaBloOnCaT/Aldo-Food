@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservar Mesa - Aldo's Foods</title>
+    <link rel="stylesheet" type="text/css" href="../CSS/styles.css">
+</head>
+<body>
+    <div id="contenedor-principal">
+
+        <header>
+            <div class="logo">
+                <img src="../IMG/logo.png" alt="Logo Aldo's Foods" class="img-logo">
+            </div>
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
+                <span></span><span></span><span></span>
+            </button>
+            <nav id="navMenu">
+                <ul>
+                    <li><a href="../index.html">INICIO</a></li>
+                    <li><a href="menu.html" class="btn-nav">MENU</a></li>
+                    <li><a href="pedidos.html" class="btn-nav">PEDIDOS</a></li>
+                    <li><a href="#" class="btn-nav">Reservar</a></li>
+                    <li><a href="quienes_somos.html" class="btn-nav">QUIENES SOMOS</a></li>
+                    <li><a href="contactenos.html" class="btn-nav">CONTACTENOS</a></li>
+                    <li><a href="#" class="carrito-icono">🛒</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <div class="breadcrumb"><p>Reservar Mesa ></p></div>
+
+            <section class="pagina-hero">
+                <h1>Reserva tu Mesa</h1>
+                <p>Vive la experiencia completa de Aldo's Foods. Reserva tu lugar y llegá sin esperar.</p>
+            </section>
+
+            <section class="seccion-pagina">
+                <h2>HACER UNA RESERVA</h2>
+
+                <div class="grid-reserva">
+                    <div class="formulario-reserva-full">
+                        <h3 style="font-size:16px; font-weight:normal; margin-bottom:5px;">DATOS DE LA RESERVA</h3>
+                        <hr style="border:none; border-top:1px solid #ddd; margin-bottom:10px;">
+
+                        <label for="nombre-r">Nombre completo</label>
+                        <input type="text" id="nombre-r" name="nombre" placeholder="Tu nombre">
+
+                        <label for="tel-r">Teléfono de contacto</label>
+                        <input type="tel" id="tel-r" name="telefono" placeholder="300 000 0000">
+
+                        <label for="personas-r">Número de personas</label>
+                        <select id="personas-r" name="personas">
+                            <option value="">-- Selecciona --</option>
+                            <option>1 persona</option>
+                            <option>2 personas</option>
+                            <option>3 personas</option>
+                            <option>4 personas</option>
+                            <option>5 personas</option>
+                            <option>6 personas</option>
+                            <option>Más de 6 (grupo especial)</option>
+                        </select>
+
+                        <label for="fecha-r">Fecha</label>
+                        <input type="date" id="fecha-r" name="fecha">
+
+                        <label for="hora-r">Hora preferida</label>
+                        <select id="hora-r" name="hora">
+                            <option value="">-- Selecciona hora --</option>
+                            <option>12:00 pm</option>
+                            <option>1:00 pm</option>
+                            <option>2:00 pm</option>
+                            <option>3:00 pm</option>
+                            <option>5:00 pm</option>
+                            <option>6:00 pm</option>
+                            <option>7:00 pm</option>
+                            <option>8:00 pm</option>
+                            <option>9:00 pm</option>
+                            <option>10:00 pm</option>
+                        </select>
+
+                        <label for="notas-r">Ocasión especial o solicitud</label>
+                        <textarea id="notas-r" name="notas" rows="3" placeholder="Cumpleaños, aniversario, mesa preferida..."></textarea>
+
+                        <button type="submit" class="btn-negro btn-full">Solicitar Reserva</button>
+                    </div>
+
+                    <div class="reserva-info">
+                        <h3>INFORMACIÓN IMPORTANTE</h3>
+                        <div class="regla-reserva">
+                            <span>🕒</span>
+                            <p><strong>Horario de atención</strong><br>Lunes a Domingo — 12:00 pm a 11:00 pm</p>
+                        </div>
+                        <div class="regla-reserva">
+                            <span>📅</span>
+                            <p><strong>Confirmación</strong><br>Te contactaremos para confirmar la reserva dentro de 30 minutos.</p>
+                        </div>
+                        <div class="regla-reserva">
+                            <span>⏳</span>
+                            <p><strong>Tiempo de espera</strong><br>La mesa se reserva por 15 minutos después de la hora pactada.</p>
+                        </div>
+                        <div class="regla-reserva">
+                            <span>👥</span>
+                            <p><strong>Grupos grandes</strong><br>Para grupos de más de 6 personas, contáctanos directamente al (604) 555-0192.</p>
+                        </div>
+                        <div class="regla-reserva">
+                            <span>📍</span>
+                            <p><strong>Dirección</strong><br>Cra. 47 #52-06, Los Naranjos, Itagüí, Antioquia</p>
+                        </div>
+                        <div class="regla-reserva">
+                            <span>❌</span>
+                            <p><strong>Cancelaciones</strong><br>Si no puedes asistir, avísanos con al menos 2 horas de anticipación.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-iconos-izq">
+                <span>📍</span><span>📞</span><span>💻</span>
+            </div>
+            <div class="footer-iconos-der">
+                <div class="barra-placeholder"></div>
+                <div class="barra-placeholder"></div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        const toggle = document.getElementById('menuToggle');
+        const nav = document.getElementById('navMenu');
+        toggle.addEventListener('click', () => nav.classList.toggle('abierto'));
+    </script>
+</body>
+</html>

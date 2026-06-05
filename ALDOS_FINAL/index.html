@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aldo's Foods Steakhouse</title>
+    <link rel="stylesheet" type="text/css" href="CSS/styles.css">
+</head>
+<body>
+    <div id="contenedor-principal">
+        
+        <header>
+            <div class="logo">
+                <img src="IMG/logo.png" alt="Logo Aldo's Foods" class="img-logo">
+            </div>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav id="navMenu">
+                <ul>
+                    <li><a href="#">INICIO</a></li>
+                    <li><a href="FILE/menu.html" class="btn-nav">MENU</a></li>
+                    <li><a href="FILE/pedidos.html" class="btn-nav">PEDIDOS</a></li>
+                    <li><a href="FILE/reservar.html" class="btn-nav">Reservar</a></li>
+                    <li><a href="FILE/quienes_somos.html" class="btn-nav">QUIENES SOMOS</a></li>
+                    <li><a href="FILE/contactenos.html" class="btn-nav">CONTACTENOS</a></li>
+                    <li><a href="#" class="carrito-icono">🛒</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section class="hero">
+                <div class="hero-texto">
+                    <h1>ORDENA TUS PLATOS FAVORITOS EN LINEA</h1>
+                    <p>Para hacer tu pedido de forma rapida y sencilla solo llama a nuestro número o escribe a nuestras redes 
+                        sociales y nos pondremos en contacto.</p>
+                    <a href="FILE/menu.html" class="btn-negro">Ver el Menu</a>
+                </div>
+                <div class="hero-banner">
+                    <img src="IMG/banner.png" alt="Banner promocional Aldo's Foods" class="img-banner">
+                </div>
+            </section>
+
+            <div class="contenido-dividido">
+                
+                <section class="columna-izquierda">
+                    
+                    <h2>PRODUCTOS POPULARES</h2>
+                    <div class="grid-productos">
+                        <div class="producto-card">
+                            <img src="IMG/pastel-tres-leches.png" alt="Pastel de Tres Leche" class="img-producto">
+                            <h3>Pastel de Tres Leche</h3>
+                            <p>$ 10.000</p>
+                            <button class="btn-negro">Agregar</button>
+                        </div>
+                        
+                        <div class="producto-card">
+                            <img src="IMG/picada.png" alt="Picada Mediana" class="img-producto">
+                            <h3>Picada Mediana</h3>
+                            <p>$ 40.000</p>
+                            <button class="btn-negro">Agregar</button>
+                        </div>
+
+                        <div class="producto-card">
+                            <img src="IMG/lasana-pollo.png" alt="Lasaña de Pollo" class="img-producto">
+                            <h3>Lasaña de Pollo</h3>
+                            <p>$ 22.000</p>
+                            <button class="btn-negro">Agregar</button>
+                        </div>
+
+                        <div class="producto-card">
+                            <img src="IMG/jugo-mango.png" alt="Jugo de Mango" class="img-producto">
+                            <h3>Jugo de Mango</h3>
+                            <p>$ 4.500</p>
+                            <button class="btn-negro">Agregar</button>
+                        </div>
+                    </div>
+
+                    <div class="texto-reserva-inferior">
+                        <h2>RESERVA</h2>
+                        <p>Reserva tu mesa para una experiencia increible</p>
+                        <p class="texto-pequeno">Puedes hacer la reserva mediante nuestros metodos de contacto como WhatsApp, Pagina Web o por Nuestro Número telefónico.</p>
+                    </div>
+
+                </section>
+
+                <aside class="columna-derecha">
+                    <h2>RESERVA TU MESA</h2>
+                    <p>Para hacer una reserva llama al 555-5555.</p>
+                    
+                    <form action="#" method="POST" class="formulario-reserva">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" name="nombre">
+
+                        <label for="personas">Numero de Personas</label>
+                        <input type="number" id="personas" name="personas">
+
+                        <label for="fecha">Fecha</label>
+                        <input type="date" id="fecha" name="fecha">
+
+                        <button type="submit" class="btn-negro btn-full">Reservar</button>
+                    </form>
+                </aside>
+
+            </div>
+        </main>
+
+        <footer>
+            <div class="footer-iconos-izq">
+                <span class="icono-placeholder">📍</span>
+                <span class="icono-placeholder">📞</span>
+                <span class="icono-placeholder">💻</span>
+            </div>
+            <div class="footer-iconos-der">
+                <div class="barra-placeholder"></div>
+                <div class="barra-placeholder"></div>
+            </div>
+        </footer>
+
+    </div>
+
+    <script>
+        const toggle = document.getElementById('menuToggle');
+        const nav = document.getElementById('navMenu');
+        toggle.addEventListener('click', () => nav.classList.toggle('abierto'));
+    </script>
+</body>
+</html>
